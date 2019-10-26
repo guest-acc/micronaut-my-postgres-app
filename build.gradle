@@ -10,6 +10,7 @@ version "0.1"
 group "my.postgres.app"
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven { url "https://jcenter.bintray.com" }
 }
@@ -37,7 +38,7 @@ dependencies {
     testImplementation "io.micronaut.test:micronaut-test-junit5"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
 
-    implementation 'io.micronaut.configuration:micronaut-postgres-reactive'
+    implementation 'io.micronaut.configuration:micronaut-vertx-pg-client:1.3.0.BUILD-SNAPSHOT'
 }
 
 test.classpath += configurations.developmentOnly

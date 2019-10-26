@@ -2,7 +2,7 @@ micronaut:
   application:
     name: my-postgres-app
 
-postgres.reactive.client:
+vertx.pg.client:
   port: 5432
   host: localhost
   database: postgres

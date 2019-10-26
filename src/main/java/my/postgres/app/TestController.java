@@ -11,8 +11,8 @@ package my.postgres.app;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
-import io.reactiverse.reactivex.pgclient.PgPool;
 import io.reactivex.Single;
+import io.vertx.reactivex.pgclient.PgPool;
 
 import javax.inject.Inject;
 
